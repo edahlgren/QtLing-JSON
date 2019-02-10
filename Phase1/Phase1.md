@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Phase 1
-nav_order: 2
 has_children: true
+nav_order: 4
 permalink: /Phase1
 ---
 

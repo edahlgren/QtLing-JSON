@@ -1,10 +1,10 @@
 ---
 layout: default
-title: The Crab algorithm
+title: Intro
 nav_order: 1
 permalink: /
 ---
 
-# The Crab algorithm
+# JSON in QtLing
 
 [...]
