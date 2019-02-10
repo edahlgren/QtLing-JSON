@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Crab algorithm
+title: The Crab algorithm
 nav_order: 1
 permalink: /
 ---
 
-# Crab algorithm
+# The Crab algorithm
 
 [...]
