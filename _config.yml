@@ -1,17 +1,1 @@
-plugins:
-  - jekyll-relative-links
-  - jekyll-remote-theme
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - README.md
-  - Step1.md
-  - Step2.md
-  - Step3.md
-  
-title: Crab steps JSON
-description: JSON data for steps in the Crab algorithm
-search_enabled: true
-
 remote_theme: pmarsceill/just-the-docs
