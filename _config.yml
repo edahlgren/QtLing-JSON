@@ -1,0 +1,4 @@
+remote_theme: pmarsceill/just-the-docs
+title: Crab steps JSON
+description: JSON data for steps in the Crab algorithm
+search_enabled: true
