@@ -8,4 +8,4 @@ permalink: /Phase1
 
 # Phase 1
 
-[...]
+TODO: Add description
