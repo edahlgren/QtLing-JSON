@@ -16,8 +16,6 @@ TODO: Add description
 
 A JSON formatted file containing an array of lowercased sorted words and their frequencies.
 
-For example:
-
 ```
 {
     "words": [
@@ -47,6 +45,4 @@ A JSON formatted file containing the set of all protostems.
 
 For each string in the "protostems" array:
 
-+ The name of a protostem. Should not be empty.
-
-> **NOTE:** A `typename` field is optional but recommended. See the RFC for more details.
++ The name of a protostem.

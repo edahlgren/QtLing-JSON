@@ -11,21 +11,11 @@ TODO: Add description
 + [Input](#input)
 + [Output](#output)
 
-### Input
+---
 
-A [DX1]() formatted file containing line-separated words in a lexicon, where words and their frequencies are separated by spaces.
+## Input
 
-```
-[A-Za-z]+ [0-9]+ [A-Za-z]+ ... [A-Za-z]+
-```
-
-For each line:
-
-+ First token (word) is required
-+ Second token (word frequency) is optional
-+ All other tokens are ignored.
-
-For example:
+A [DX1]() formatted file containing a lexicon. For each line, the first token is a word (required), the second token is the word frequency (optional), and all other tokens are ignored. Tokens must be space-separated.
 
 ```
 the 63146 t h e
@@ -40,9 +30,9 @@ was 9625 w a s
 for 8817 f o r
 ```
 
-### Output
+## Output
 
-A JSON formatted file containing an array of lowercased sorted words and their frequencies. See [Finding suffixes]() and [Finding prefixes]() for details on sorting.
+A JSON formatted file containing an array of lowercased sorted words and their frequencies. See [sorting](#sorting) below.
 
 ```
 {
@@ -58,12 +48,12 @@ A JSON formatted file containing an array of lowercased sorted words and their f
 
 For each JSON object in the "words" array:
 
-+ A `"name"` field with a string value that is the lowercased word. Should not be empty.
-+ A `"count"` field with a numeric value that is the frequency of the word. Defaults to 1.
++ A `"name"` field with a string value that is the lowercased word.
++ A `"count"` field with a numeric value that is the frequency of the word. Should default to 1.
 
-> **NOTE:** A `typename` field is optional but recommended. See the RFC for more details.
+---
 
-#### Finding suffixes
+#### Sorting
 
 To find suffixes, words must be ordered lexigraphically.
 
@@ -115,8 +105,6 @@ For example:
     ]
 }
 ```
-
-#### Finding prefixes
 
 To find prefixes, words must be ordered lexigraphically when they are reversed.
 
