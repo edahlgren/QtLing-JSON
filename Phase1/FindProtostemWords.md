@@ -13,7 +13,9 @@ TODO: Add description
 + [Input 2](#input-2)
 + [Output](#output)
 
-### Input 1
+---
+
+## Input 1
 
 A JSON formatted file containing an array of lowercased sorted words and their frequencies.
 
@@ -22,16 +24,16 @@ A JSON formatted file containing an array of lowercased sorted words and their f
     "words": [
         {
             "name": "[a-z]+"
-            "count": [0-1]+,
+            "count": [0-9]+,
         },
         ...
     ]
 }
 ```
 
-See Preprocessing (output) for more details.
+See [Preprocessing (output)](../Preprocessing.html#output) for more details.
 
-### Input 2
+## Input 2
 
 A JSON formatted file containing the set of all protostems.
 
@@ -44,9 +46,11 @@ A JSON formatted file containing the set of all protostems.
 }
 ```
 
-See Find protostems (output) for more details.
+See [Find protostems (output)](./FindProtostems.html#output) for more details.
 
-### Output
+---
+
+## Output
 
 A map of protostems to start and end indexes in a word list.
 
@@ -65,14 +69,16 @@ A map of protostems to start and end indexes in a word list.
 
 For each field in the "protostem_to_words" object:
 
-+ The field name is a protostem string.
++ The field name is a protostem.
 + The value is a JSON object containing:
   + A `"word_start_index"` with a numeric value that is the start index in a word list.
   + A `"word_end_index"` with a numeric value that is the end index in a word list.
 
 The `"wordlist"` points to a JSON file containing a word list.
 
-For example:
+---
+
+#### Example
 
 ```
 {
@@ -80,6 +86,7 @@ For example:
         "that": {
             "word_start_index": 6
             "word_end_index": 10,
+        }
     },
     "wordlist": "/home/qtling/words.json"
 }

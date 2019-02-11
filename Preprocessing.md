@@ -15,7 +15,7 @@ TODO: Add description
 
 ## Input
 
-A [DX1]() formatted file containing a lexicon. For each line, the first token is a word (required), the second token is the word frequency (optional), and all other tokens are ignored. Tokens must be space-separated.
+A [DX1](https://github.com/markandrus/DX1/blob/master/README.md) formatted file containing a lexicon. For each line, the first token is a word (required), the second token is the word frequency (optional), and all other tokens are ignored. Tokens must be space-separated.
 
 ```
 the 63146 t h e
@@ -30,16 +30,20 @@ was 9625 w a s
 for 8817 f o r
 ```
 
+---
+
 ## Output
 
-A JSON formatted file containing an array of lowercased sorted words and their frequencies. See [sorting](#sorting) below.
+A JSON formatted file containing an array of lowercased sorted words and their frequencies.
+
+To find suffixes, words must be ordered lexigraphically. To find prefixes, words must be ordered lexigraphically when they are reversed.
 
 ```
 {
     "words": [
         {
             "name": "[a-z]+"
-            "count": [0-1]+,
+            "count": [0-9]+,
         },
         ...
     ]
@@ -53,11 +57,9 @@ For each JSON object in the "words" array:
 
 ---
 
-#### Sorting
+#### Example
 
-To find suffixes, words must be ordered lexigraphically.
-
-For example:
+For finding suffixes:
 
 ```
 {
@@ -106,9 +108,7 @@ For example:
 }
 ```
 
-To find prefixes, words must be ordered lexigraphically when they are reversed.
-
-For example:
+For finding prefixes:
 
 ```
 {

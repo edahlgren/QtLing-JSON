@@ -13,7 +13,9 @@ TODO: Add description
 + [Input 2](#input-1)
 + [Output](#output)
 
-### Input 1
+---
+
+## Input 1
 
 A JSON formatted file containing an array of lowercased sorted words and their frequencies.
 
@@ -22,16 +24,16 @@ A JSON formatted file containing an array of lowercased sorted words and their f
     "words": [
         {
             "name": "[a-z]+"
-            "count": [0-1]+,
+            "count": [0-9]+,
         },
         ...
     ]
 }
 ```
 
-See Preprocessing (output) for more details.
+See [Preprocessing (output)](../Preprocessing.html#output) for more details.
 
-### Input 2
+## Input 2
 
 A JSON formatted file containing the set of all protostems.
 
@@ -44,9 +46,11 @@ A JSON formatted file containing the set of all protostems.
 }
 ```
 
-See Find protostems (output) for more details.
+See [Find protostems (output)](./FindProtostems.html#output) for more details.
 
-### Output
+---
+
+## Output
 
 A JSON formatted file containing the parts (stem, affix) of each word.
 

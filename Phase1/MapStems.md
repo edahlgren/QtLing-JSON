@@ -12,7 +12,9 @@ TODO: Add description
 + [Input](#input)
 + [Output](#output)
 
-### Input
+---
+
+## Input
 
 A JSON formatted file containing the parts (stem, affix) of each word.
 
@@ -29,9 +31,11 @@ A JSON formatted file containing the parts (stem, affix) of each word.
 }
 ```
 
-See Find word parts (output) for more details.
+See [Find word parts (output)](./FindWordParts.html#output) for more details.
 
-### Output
+---
+
+## Output
 
 A JSON formatted file containing a mapping of stems to all affixes.
 

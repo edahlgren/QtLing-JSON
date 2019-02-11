@@ -12,7 +12,9 @@ TODO: Add description
 + [Input](#input)
 + [Output](#output)
 
-### Input
+---
+
+## Input
 
 A JSON formatted file containing a mapping of stems to all affixes.
 
@@ -31,9 +33,11 @@ A JSON formatted file containing a mapping of stems to all affixes.
 }
 ```
 
-See Map stems (output) for more details.
+See [Map stems (output)](./MapStems.html#output) for more details.
 
-### Output
+---
+
+## Output
 
 A JSON formatted file containing the set of signatures and their component affixes.
 
