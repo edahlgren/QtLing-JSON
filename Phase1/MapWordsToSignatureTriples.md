@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Map words to signature triples
-parent: Phase 1
-nav_order: 9
+parent: Create signature quadruples
+nav_order: 5
 ---
 
 # Map words to signature triples

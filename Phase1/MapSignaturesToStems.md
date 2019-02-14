@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Map signatures to stems
-parent: Phase 1
-nav_order: 8
+parent: Create signature quadruples
+nav_order: 4
 ---
 
 # Map signatures to stems

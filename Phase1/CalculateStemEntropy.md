@@ -2,7 +2,7 @@
 layout: default
 title: Calculate stem entropy
 parent: Phase 1
-nav_order: 10
+nav_order: 7
 ---
 
 # Calculate stem entropy

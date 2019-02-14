@@ -2,7 +2,7 @@
 layout: default
 title: Collect parasuffixes
 parent: Phase 1
-nav_order: 11
+nav_order: 8
 ---
 
 # Collect parasuffixes

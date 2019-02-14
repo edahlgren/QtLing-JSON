@@ -2,7 +2,7 @@
 layout: default
 title: Calculate signature robustness
 parent: Phase 1
-nav_order: 12
+nav_order: 9
 ---
 
 # Calculate signature robustness

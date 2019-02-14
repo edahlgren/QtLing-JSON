@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Create signature quadruples
+has_children: true
 parent: Phase 1
 nav_order: 6
 ---

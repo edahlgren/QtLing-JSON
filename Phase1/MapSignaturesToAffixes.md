@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Map signatures to affixes
-parent: Phase 1
-nav_order: 7
+parent: Create signature quadruples
+nav_order: 3
 ---
 
 # Map signatures to affixes

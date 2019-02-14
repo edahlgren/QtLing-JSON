@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Sort affixes
-parent: Phase 1
-nav_order: 5
+parent: Create signature quadruples
+nav_order: 1
 ---
 
 # Sort affixes
