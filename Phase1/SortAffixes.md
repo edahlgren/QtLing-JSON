@@ -32,7 +32,7 @@ A JSON formatted file containing a set of signature quadruples.
 }
 ```
 
-See [Create signatures (output)](../CreateSignatures.html#output) for more details.
+See [Create signatures (output)](./CreateSignatures.html#output) for more details.
 
 ## Output
 

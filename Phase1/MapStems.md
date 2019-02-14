@@ -37,7 +37,7 @@ See [Find word parts (output)](./FindWordParts.html#output) for more details.
 
 ## Output
 
-A JSON formatted file containing a mapping of stems to all affixes.
+A JSON formatted file containing a mapping of stems to affixes.
 
 ```
 {
