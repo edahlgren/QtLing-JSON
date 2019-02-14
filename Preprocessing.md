@@ -6,10 +6,12 @@ nav_order: 3
 
 # Preprocessing
 
-TODO: Add description
+In QtLing this is [MainWindow::read_dx1_file()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/mainwindow.cpp#L610).
 
-+ [Input](#input)
-+ [Output](#output)
+This step reads a lexicon from a file and sort words in the lexicon to prepare for finding either suffixes or prefixes.
+
++ [Input: set of words and frequencies](#input)
++ [Output: sorted word list](#output)
 
 ---
 
