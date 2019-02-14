@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Create affix signatures
+title: Create presignatures
 parent: Phase 1
 nav_order: 5
 ---
 
-# Create affix signatures
+# Create presignatures
 
 TODO: Add description
 
@@ -39,13 +39,13 @@ See [Map stems (output)](./MapStems.html#output) for more details.
 
 ## Output
 
-A JSON formatted file containing the set of signatures and their component affixes.
+A JSON formatted file containing a set of presignatures and their component affixes.
 
 ```
 {
-    "signatures": [
+    "presignatures": [
         {
-            "full": "[a-z]+",
+            "sig": "[a-z]+",
             "affixes": [
                 "[a-z]+",
                 ...
@@ -56,7 +56,7 @@ A JSON formatted file containing the set of signatures and their component affix
 }
 ```
 
-For each JSON object in the "signatures" array:
+For each JSON object in the "presignatures" array:
 
-+ A `"full"` field with a string value that is a full signature (affixes joined with `"="`).
-+ A `"affixes"` field with an array value that is the set of affixes that make up the signature.
++ A `"sig"` field with a string value that is a presignature (affixes joined with `"="`).
++ A `"affixes"` field with an array value that is the set of affixes that make up the presignature.
