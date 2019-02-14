@@ -2,19 +2,23 @@
 layout: default
 title: Calculate stem entropy
 parent: Phase 1
-nav_order: 7
+nav_order: 5
 ---
 
 # Calculate stem entropy
 
-TODO: Add description
+In [QtLing](https://github.com/edahlgren/QtLing/tree/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing) this is [CSignatureCollection::calculate_stem_entropy()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/SignatureCollection.cpp#L192). It is called by [CLexicon::step4_create_signatures()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/lexicon_crab1.cpp#L405) on a set of newly created signatures.
 
-+ [Input: mapping of signatures to stems](#input)
-+ [Output: mapping of signatures to stem entropy](#output)
+This step iterates through a mapping of signatures to stems and calculates the "stem entropy" of each signature. The result is a mapping of signatures to stem entropy.
+
++ [Input: a map of signatures to stems](#input-11)
++ [Output: a map of signatures to stem entropy](#output-12)
 
 ---
 
-## Input
+#### Input 1.1
+
+---
 
 A JSON formatted file containing a mapping of signatures to the set of associated stems.
 
@@ -30,12 +34,13 @@ A JSON formatted file containing a mapping of signatures to the set of associate
 }
 ```
 
-See [Map signatures to stems (output)](../MapSignaturesToStems.html#output) for more details.
+See [Find signatures (Output 5.2)](./FindSignatures.html#output-52) for more details.
 
 ---
 
+#### Output 1.2
 
-## Output
+---
 
 A JSON formatted file containing a mapping of signatures to stem entropy.
 

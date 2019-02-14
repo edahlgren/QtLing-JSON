@@ -1,21 +1,24 @@
 ---
 layout: default
 title: Preprocessing
-nav_order: 3
+nav_order: 2
 ---
 
 # Preprocessing
 
-In QtLing this is [MainWindow::read_dx1_file()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/mainwindow.cpp#L610).
+In [QtLing](https://github.com/edahlgren/QtLing/tree/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing) this is [MainWindow::read_dx1_file()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/mainwindow.cpp#L610). There are no substeps.
 
-This step reads a lexicon from a file and sort words in the lexicon to prepare for finding either suffixes or prefixes.
+This step reads a lexicon from a DX1 formatted file and sort words in the lexicon to prepare for finding either suffixes or prefixes.
 
-+ [Input: set of words and frequencies](#input)
-+ [Output: sorted word list](#output)
++ [Input: a DX1 formatted file](#input-11)
++ [Output: a sorted word list](#output-12)
+  + [Example](#example-13)
 
 ---
 
-## Input
+#### Input 1.1
+
+---
 
 A [DX1](https://github.com/markandrus/DX1/blob/master/README.md) formatted file containing a lexicon. For each line, the first token is a word (required), the second token is the word frequency (optional), and all other tokens are ignored. Tokens must be space-separated.
 
@@ -34,7 +37,9 @@ for 8817 f o r
 
 ---
 
-## Output
+#### Output 1.2
+
+---
 
 A JSON formatted file containing an array of lowercased sorted words and their frequencies.
 
@@ -59,7 +64,9 @@ For each JSON object in the "words" array:
 
 ---
 
-#### Example
+#### Example 1.3
+
+---
 
 For finding suffixes:
 

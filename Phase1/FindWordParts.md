@@ -2,20 +2,24 @@
 layout: default
 title: Find word parts
 parent: Phase 1
-nav_order: 3
+nav_order: 2
 ---
 
 # Find word parts
 
-TODO: Add description
+In [QtLing](https://github.com/edahlgren/QtLing/tree/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing) this is [CLexicon::step2_from_protostems_to_parses()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/lexicon_crab1.cpp#L222). There are no substeps.
 
-+ [Input 1](#input-1)
-+ [Input 2](#input-1)
-+ [Output](#output)
+This step finds stem and affix pairs ("word parts" or "parses") from words. The result is a set of triples where each triple contains a stem, affix, and word.
+
++ [Input: a sorted word list](#input-11)
++ [Input: a set of protostems](#input-12)
++ [Output: a set of word parts ("parses")](#output-13)
 
 ---
 
-## Input 1
+#### Input 1.1
+
+---
 
 A JSON formatted file containing an array of lowercased sorted words and their frequencies.
 
@@ -31,9 +35,13 @@ A JSON formatted file containing an array of lowercased sorted words and their f
 }
 ```
 
-See [Preprocessing (output)](../Preprocessing.html#output) for more details.
+See [Preprocessing (Output 1.2)](../Preprocessing.html#output-12) for more details.
 
-## Input 2
+---
+
+#### Input 1.2
+
+---
 
 A JSON formatted file containing the set of all protostems.
 
@@ -46,11 +54,13 @@ A JSON formatted file containing the set of all protostems.
 }
 ```
 
-See [Find protostems (output)](./FindProtostems.html#output) for more details.
+See [Find protostems (Output 1.2)](./FindProtostems.html#output-12) for more details.
 
 ---
 
-## Output
+#### Output 1.3
+
+---
 
 A JSON formatted file containing the parts (stem, affix) of each word.
 
@@ -71,4 +81,4 @@ For each JSON object in the "word_parts" array:
 
 + A `"stem"` field with a string value that is the word stem.
 + An `"affix"` field with a string value that is the word affix (prefix or suffix).
-+ A `"word"` field with the full word. Can be omitted.
++ A `"word"` field with the full word. Optional.
