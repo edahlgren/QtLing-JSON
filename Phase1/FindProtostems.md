@@ -7,10 +7,10 @@ nav_order: 1
 
 # Find protostems
 
-TODO: Add description
+This is the first half of [step1_from_words_to_protostems()](https://github.com/edahlgren/QtLing/blob/6df4bf4898274a26db7fc961f4cc7e8f7c0a91eb/QtLing/lexicon_crab1.cpp#L76).
 
-+ [Input](#input)
-+ [Output](#output)
++ [Input: word list](#input)
++ [Output: protostems](#output)
 
 ---
 
