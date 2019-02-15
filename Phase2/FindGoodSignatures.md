@@ -14,7 +14,7 @@ Substeps:
 + [Sort signatures](#sort-signatures)
 + [Find minimal cover](#find-minimal-cover)
 + [Create good signatures](#create-good-signatures)
-+ [Sort good signature stems](#sort-good-signatures)
++ [Sort good signature stems](#sort-good-signature-stems)
 
 ---
 

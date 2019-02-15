@@ -130,7 +130,7 @@ This step finds word parts ("parses") from a set of "doomed" signatures.
 
 ---
 
-### Input 2.1
+#### Input 2.1
 
 ---
 
@@ -152,8 +152,11 @@ A JSON formatted file containing a set of signature quadruples.
 
 See [Find signatures (Output 1.3)](../Phase1/FindSignatures.html#output-13) for more details.
 
+---
 
-## Input 2.2
+#### Input 2.2
+
+---
 
 A JSON formatted file containing "doomed" signatures and "doomed" affixes.
 

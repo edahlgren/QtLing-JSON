@@ -12,7 +12,7 @@ In [QtLing](https://github.com/edahlgren/QtLing/tree/6df4bf4898274a26db7fc961f4c
 Substeps:
 
 + [Map stems to affixes v2](#map-stems-to-affixes-v2)
-+ [Find presignatures](#find-presignatures)
++ [Create presignatures](#create-presignatures)
 + [Find signatures](#find-signatures)
 
 ---
